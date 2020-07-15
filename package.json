@@ -1,13 +1,19 @@
 {
 	"name": "vscode-outsystems",
-	"displayName": "vscode-outsystems",
-	"description": "Syntax highlighting for OutSystems code in Visual Studio Code.",
+	"displayName": "OutSystems",
+	"description": "OutSystems language support for Visual Studio Code.",
+	"author": "Jordan Welch",
+	"license": "MIT",
 	"version": "0.0.1",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/JHWelch/vscode-outsystems"
+    },
 	"engines": {
 		"vscode": "^1.47.0"
 	},
 	"categories": [
-		"Other"
+        "Programming Languages"
 	],
 	"activationEvents": [
 		"onCommand:vscode-outsystems.helloWorld"
@@ -19,7 +25,25 @@
 				"command": "vscode-outsystems.helloWorld",
 				"title": "Hello World"
 			}
-		]
+		],
+		"languages": [
+            {
+                "id": "outsystems",
+                "aliases": [
+                    "OutSystems",
+                    "outsystems",
+                    "OUTSYSTEMS"
+                ],
+                "configuration": "./outsystems-language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "outsystems",
+                "scopeName": "text.outsystems",
+                "path": "./syntaxes/outsystems.tmLanguage.json"
+            }
+        ]
 	},
 	"scripts": {
 		"lint": "eslint .",

@@ -1,0 +1,46 @@
+{
+    "comments": {
+        "blockComment": [
+            "/*",
+            "*/"
+        ],
+        "lineComment": "//"
+    },
+    "brackets": [
+        [
+            "(",
+            ")"
+        ],
+        [
+            "[",
+            "]"
+        ],
+        //Not Sure if it uses {} anywhere as brackets
+        [
+            "{",
+            "}"
+        ]
+    ],
+    "autoClosingPairs": [
+        [
+            "(",")"
+        ],
+        [
+            "[","]"
+        ],
+        //Not Sure if it uses {} anywhere as brackets
+        [
+            "{","}"
+        ],
+        {
+            "open": "\"", 
+            "close": "\"",
+            "notIn": ["string"]
+        },
+        {
+            "open": "/*",
+            "close": "*/",
+            "notIn": ["string"]
+        }
+    ]
+}
